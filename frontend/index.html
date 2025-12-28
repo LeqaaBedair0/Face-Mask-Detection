@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>كاشف الكمامة الذكي</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>كاشف الكمامة الذكي</h1>
+    <p class="subtitle">ارفع صورة أو استخدم الكاميرا للكشف في الوقت الفعلي</p>
+
+    <div class="section">
+      <h2>رفع صورة</h2>
+      <input type="file" id="imageUpload" accept="image/*" />
+      <div id="imagePreview"></div>
+      <div id="result" class="result"></div>
+    </div>
+
+    <div class="section">
+      <h2>الكشف في الوقت الفعلي</h2>
+      <button id="startCamera">بدء الكاميرا</button>
+      <button id="stopCamera">إيقاف الكاميرا</button>
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas"></canvas>
+      <div id="realtimeResult"></div>
+    </div>
+
+    <footer>
+      <p>مشروع تخرج - كاشف الكمامة باستخدام الذكاء الاصطناعي</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
